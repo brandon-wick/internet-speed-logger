@@ -19,7 +19,7 @@ const options = {
 };
 
 groups.add({
-  id: 0,
+  id: '0',
   content: 'Download - Mbps',
   options: {
     drawPoints: {
@@ -32,7 +32,7 @@ groups.add({
 });
 
 groups.add({
-  id: 1,
+  id: '1',
   content: 'Upload - Mbps',
   options: {
     drawPoints: {
@@ -45,7 +45,7 @@ groups.add({
 });
 
 groups.add({
-  id: 2,
+  id: '2',
   content: 'Ping - Milliseconds',
   options: {
     drawPoints: {
@@ -58,7 +58,7 @@ groups.add({
 });
 
 groups.add({
-  id: 3,
+  id: '3',
   content: 'Jitter - Milliseconds',
   options: {
     drawPoints: {
