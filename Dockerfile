@@ -1,7 +1,7 @@
 FROM node:20
 WORKDIR /home/node/app
-ENV NODE_ENV=production
-LABEL org.opencontainers.image.source=https://github.com/jeffbyrnes/internet-speed-logger
+# ENV NODE_ENV=production
+# LABEL org.opencontainers.image.source=https://github.com/brandon-wick/internet-speed-logger
 RUN export SPEEDTESTVERSION="1.2.0" && \
     export SPEEDTESTARCH="x86_64" && \
     export SPEEDTESTPLATFORM="linux" && \

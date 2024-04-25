@@ -2,25 +2,29 @@
 version: "3"
 services:
   ui:
-    image: ghcr.io/jeffbyrnes/internet-speed-logger:latest
+    # image: ghcr.io/jeffbyrnes/internet-speed-logger:latest
+    build:
+      context: .
     ports:
       - 3000:3000
       - 9229:9229
     restart: always
-    command: node --inspect=0.0.0.0:9229 index.js
-    # entrypoint:
-    #   - npm
-    #   - run
-    #   - webserver
+    entrypoint:
+      - npm
+      - run
+      - dev
     volumes:
       - ./config:/data/config
+      # - .:/home/node/app:rw
     environment:
       - NODE_ENV=development
     depends_on:
       - mongo
 
   runner:
-    image: ghcr.io/jeffbyrnes/internet-speed-logger:latest
+    # image: ghcr.io/jeffbyrnes/internet-speed-logger:latest
+    build:
+      context: .
     depends_on:
       - mongo
       - ui

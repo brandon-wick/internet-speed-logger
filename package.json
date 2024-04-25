@@ -4,7 +4,7 @@
   "description": "Automated logger and grapher for speedtests",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon --inspect=0.0.0.0:9229 index.js",
     "speedtest": "node run-speedtest.js",
     "speedtest-daemon": "forever start run-speedtest.js daemon",
     "start": "npm run webserver-daemon && npm run speedtest-daemon",
@@ -20,7 +20,8 @@
     "jquery": "^3.4.1",
     "mongodb": "^4.3.1",
     "morgan": "^1.9.1",
-    "vis-charts": "^3.0.0"
+    "vis-charts": "^3.0.0",
+    "nodemon": "^2.0.15"
   },
   "devDependencies": {
     "eslint": "^8.43.0",

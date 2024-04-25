@@ -4,12 +4,13 @@
             "name": "Docker: Attach to node app",
             "type": "node",
             "request": "attach",
-            // "preLaunchTask": "docker-run: debug",
             "port": 9229,
+            "address": "localhost",
             "localRoot": "${workspaceFolder}",
             "remoteRoot": "/home/node/app",
-            // "remoteRoot": "/",
-            // "protocol": "inspector"
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
         }
     ]
 }

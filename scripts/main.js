@@ -97,7 +97,7 @@ function rangeChanged(event) {
     };
     if (data.length > 0) {
       legendText = {
-        down: `Avg. ${normalizeAvg(data[0].avgd)}`,
+        down: `lolololAvg. ${normalizeAvg(data[0].avgd)}`,
         up: `Avg. ${normalizeAvg(data[0].avgu)}`,
         ping: `Avg. ${normalizeAvg(data[0].avgp)}`,
         jitter: `Avg. ${normalizeAvg(data[0].avgj)}`,
